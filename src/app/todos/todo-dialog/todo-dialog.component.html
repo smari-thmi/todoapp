@@ -1,0 +1,26 @@
+<nz-modal
+  [(nzVisible)]="this.dialogService.isDialogOpen"
+  nzTitle="The first Modal"
+  (nzOnCancel)="handleCancel()"
+  (nzOnOk)="handleOk()"
+>
+  <ng-container class="to-do-form" *nzModalContent>
+    <form nz-form [formGroup]="toDoForm">
+      <input
+        class="todo-title"
+        nz-input
+        placeholder="Title"
+        nzSize="large"
+        formControlName="title"
+      />
+      <nz-form-item>
+        <nz-form-control>
+          <nz-textarea-count [nzMaxCharacterCount]="100">
+            <textarea rows="4" formControlName="body" nz-input></textarea>
+          </nz-textarea-count>
+        </nz-form-control>
+      </nz-form-item>
+    </form>
+  </ng-container>
+</nz-modal>
+

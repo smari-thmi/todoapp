@@ -1,0 +1,26 @@
+<nz-page-header nzTitle="Posts">
+  <nz-page-header-extra>
+    <button nz-button routerLink="/">Go back</button>
+  </nz-page-header-extra>
+</nz-page-header>
+
+<nz-card style="width: 800px; height: 600px; margin:15px;margin-left: auto; margin-right:auto;">
+  <form nz-form [formGroup]="toDoForm">
+    <input
+      class="todo-title"
+      nz-input
+      placeholder="Title"
+      nzSize="large"
+      formControlName="title"
+      style="margin-bottom:10px;"
+    />
+    <nz-form-item>
+      <nz-form-control>
+        <nz-textarea-count [nzMaxCharacterCount]="100">
+          <textarea rows="4" formControlName="body" nz-input></textarea>
+        </nz-textarea-count>
+      </nz-form-control>
+    </nz-form-item>
+  </form>
+  <button nz-button (click)="updateTodo()">Update todo</button>
+</nz-card>

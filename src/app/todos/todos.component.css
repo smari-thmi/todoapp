@@ -1,0 +1,9 @@
+ .todo-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:10px;
+    margin: 25px;
+    background-color: gainsboro;
+    justify-items: center;
+    padding: 25px;
+ }

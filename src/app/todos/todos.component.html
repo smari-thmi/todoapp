@@ -1,0 +1,13 @@
+<nz-page-header nzTitle="Todos">
+  <nz-page-header-extra>
+    <button nz-button (click)="showModal()">Add new Todo</button>
+  </nz-page-header-extra>
+</nz-page-header>
+<div class="todo-wrapper">
+  <div *ngFor="let todoData of todos">
+    <app-todo (todoDeleted)="fetchTodos()" [todo]="todoData"></app-todo>
+  </div>
+</div>
+
+<app-todo-dialog  (newTodoAdded)="fetchTodos()">
+</app-todo-dialog>

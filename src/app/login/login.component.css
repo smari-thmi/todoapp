@@ -1,0 +1,11 @@
+.user-card{
+    margin: 100px auto;
+    display:  flex;
+    flex-direction: column;
+    gap:10px;
+    width:500px;
+}
+
+.form-item{
+    margin: 10px;
+}

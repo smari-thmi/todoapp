@@ -1,0 +1,25 @@
+<div>
+  <nz-card
+    style="width: 350px; height: 250px"
+    [nzTitle]="todo.title"
+    [nzExtra]="extraTemplate"
+  >
+    <p>{{ todo.body }}</p>
+  </nz-card>
+  <ng-template #extraTemplate>
+    <button nz-button 
+    nzType="link"
+    [routerLink]="'/todo/' + todo.id" nzSize="large">
+      <span nz-icon nzType="edit" nzTheme="outline"></span>
+    </button>
+    <button
+      nz-button
+      nzType="link"
+      nzSize="large"
+      nzDanger
+      (click)="deletePost()"
+    >
+      <span nz-icon nzType="delete" nzTheme="outline"></span>
+    </button>
+  </ng-template>
+</div>

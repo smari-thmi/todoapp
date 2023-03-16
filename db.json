@@ -1,0 +1,56 @@
+{
+  "posts": [
+    {
+      "title": "testing here 1",
+      "body": "ullam consequatur ut\nomnis quis sit vel consequuntur\nipsa eligendi ipsum molestiae et omnis error nostrum\nmolestiae illo tempore quia et distinctio",
+      "id": 25
+    },
+    {
+      "title": "a todo",
+      "body": "todo",
+      "id": 1.1844505682217799
+    },
+    {
+      "title": "asdasdas",
+      "body": "asdasdasdassadasd",
+      "id": 0.2036712939265244
+    }
+  ],
+  "users": [
+    {
+      "username": "smari",
+      "password": "123",
+      "id": "smari"
+    },
+    {
+      "fullname": "smari steianr",
+      "username": "smari1",
+      "password": "123123",
+      "id": "smari1"
+    },
+    {
+      "fullname": "smarin",
+      "username": "asdas",
+      "password": "asdas",
+      "id": "asdas"
+    },
+    {
+      "fullname": "smari12312",
+      "username": "2sadas",
+      "password": "123",
+      "id": "2sadas"
+    },
+    {
+      "fullname": "lasomasdamom",
+      "username": "saodkoaskodkas",
+      "password": "asdas",
+      "id": "saodkoaskodkas"
+    },
+    {
+      "fullname": "asdasdasd1122131",
+      "username": "12312",
+      "password": "qqwd",
+      "id": "12312"
+    }
+  ]
+}

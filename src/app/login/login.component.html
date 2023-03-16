@@ -1,0 +1,84 @@
+<div *ngIf="!isRegister">
+  <nz-card class="user-card">
+    <div>
+      <h1>Login</h1>
+      <form nz-form [formGroup]="loginForm">
+        <input
+          class="form-item"
+          nz-input
+          placeholder="Username"
+          nzSize="large"
+          formControlName="username"
+        />
+        <input
+          class="form-item"
+          nz-input
+          placeholder="Password"
+          nzSize="large"
+          formControlName="password"
+          type="password"
+        />
+      </form>
+    </div>
+    <div>
+      <div>
+        <button class="form-item" nzShape="round" nz-button nzType="primary" (click)="login()">
+          Login</button
+        ><button
+          class="form-item"
+          (click)="showRegister()"
+          nzShape="round"
+          nz-button
+        >
+          Register
+        </button>
+      </div>
+    </div>
+  </nz-card>
+</div>
+
+<div *ngIf="isRegister">
+  <nz-card class="user-card">
+    <h1>Rgister</h1>
+    <div>
+      <form nz-form [formGroup]="registerForm">
+        <input
+          class="form-item"
+          nz-input
+          placeholder="fullanem"
+          nzSize="large"
+          formControlName="fullname"
+        />
+        <input
+          class="form-item"
+          nz-input
+          placeholder="Username"
+          nzSize="large"
+          formControlName="username"
+        />
+        <input
+          class="form-item"
+          nz-input
+          placeholder="Password"
+          nzSize="large"
+          formControlName="password"
+          type="password"
+        />
+      </form>
+    </div>
+    <div>
+      <div>
+        <button class="form-item" nzShape="round" nz-button nzType="primary" (click)="register()">
+          Register</button
+        ><button
+          class="form-item"
+          (click)="showLogin()"
+          nzShape="round"
+          nz-button
+        >
+          Back
+        </button>
+      </div>
+    </div>
+  </nz-card>
+</div>
